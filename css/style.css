@@ -107,9 +107,12 @@ img {
 /*******************************************************
   DEBUG ----- DEBUG ----- DEBUG -----
 *******************************************************/
+#logo-spotify {
+  padding: 2.5rem;
+}
 
 #upgrade {
-  padding: 3rem;
+  padding: 2.5rem;
   background-color: rgb(80, 80, 80);
 }
 
