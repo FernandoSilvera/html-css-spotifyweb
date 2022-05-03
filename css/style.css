@@ -107,6 +107,10 @@ img {
 /*******************************************************
   DEBUG ----- DEBUG ----- DEBUG -----
 *******************************************************/
+div {
+  border: 1px dashed red;
+}
+
 #logo-spotify {
   padding: 2.5rem;
 }
@@ -119,4 +123,8 @@ img {
 #play {
   padding: 3rem;
   background-color: rgb(114, 114, 114);
+}
+
+#play div {
+  padding: 1rem;
 }
