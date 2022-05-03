@@ -7,7 +7,7 @@
   /* Commons */
   --col-black: #111;
   --col-white: #fff;
-  --dark-gray: #333;
+  --dark-gray: rgb(38, 38, 38);
 }
 
 /* Reset */
@@ -47,6 +47,10 @@ img {
   flex-direction: column;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .just-between {
   justify-content: space-between;
 }
@@ -78,23 +82,38 @@ img {
 /****************************************************
   SECTIONS ----- SECTIONS ----- SECTIONS -----
 ****************************************************/
-
-/* SIDEBAR */
-#site {
-  height: 100%;
+#app {
+  flex-grow: 1;
 }
 
 #sidebar {
   width: 250px;
+  overflow: hidden;
   background-color: var(--col-black);
 }
 
-#content {
-  flex-grow: 1;
-  background-color: rgb(56, 64, 73);
+#music {
+  overflow: auto;
+  background-color: var(--dark-gray);
 }
 
 
 /*******************************************************
   RESPONSIVE ----- RESPONSIVE ----- RESPONSIVE -----
 *******************************************************/
+
+
+
+/*******************************************************
+  DEBUG ----- DEBUG ----- DEBUG -----
+*******************************************************/
+
+#upgrade {
+  padding: 3rem;
+  background-color: rgb(80, 80, 80);
+}
+
+#play {
+  padding: 3rem;
+  background-color: rgb(114, 114, 114);
+}
