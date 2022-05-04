@@ -27,15 +27,24 @@ img {
   height: 100%;
 }
 
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 /**********************************************************
   UTILITIES ----- UTILITIES ----- UTILITIES -----
 **********************************************************/
 
-/* LAYOUT & FLEX */
+/* LAYOUT */
 .container {
   max-width: 100%;
   height: 100vh;
   margin: 0 auto;
+}
+
+.d-block {
+  display: block;
 }
 
 .flex-row {
@@ -68,15 +77,39 @@ img {
   text-align: center;
 }
 
-.txt-white {
+.text-white {
   color: var(--col-white);
 }
 
+.text-gray {
+  color: lightgray;
+}
+
 /* BORDERS */
+.bor-pad {
+  padding: 1rem;
+}
+
 .bor-circle {
   border-radius: 50%;
 }
 
+/* IMAGES */
+.mini-logo-container {
+  width: 15%;
+  padding: 3px 0;
+  margin-right: 0.5em;
+}
+
+.mini-logo-img {
+  vertical-align: middle;
+}
+
+/* OTHERS */
+.sidebar-menu-text {
+  vertical-align: middle;
+  color: white;
+}
 
 
 /****************************************************
@@ -86,12 +119,62 @@ img {
   flex-grow: 1;
 }
 
+/* 
+  SIDEBAR
+*/
 #sidebar {
   width: 250px;
   overflow: hidden;
   background-color: var(--col-black);
 }
 
+#sidebar ul {
+  list-style: none;
+}
+
+#logo-spotify-container {
+  height: 4rem;
+  padding-right: 4rem;
+}
+
+#logo-spotify-img {
+  text-align: left;
+}
+
+#sidebar-menu {
+  margin-top: 0.2em;
+}
+
+#sidebar-menu a {
+  padding: 0.2em 0;
+  text-decoration: none;
+}
+
+#sidebar-menu a:hover {
+  background-color: rgba(75, 75, 75, 0.2);
+}
+
+/* 
+  HEADER
+*/
+#upgrade-bar {
+  height: 5rem;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(26, 29, 33);
+}
+
+#upgrade-but {
+  padding: 0.8em 2.5em;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: rgba(30, 32, 37, 0);
+  text-transform: uppercase;
+}
+
+/* 
+  MUSIC SECTION
+*/
 #music {
   overflow: auto;
   background-color: var(--dark-gray);
@@ -111,17 +194,7 @@ div {
   border: 1px dashed red;
 }
 
-#logo-spotify {
-  padding: 2.5rem;
-}
-
-#upgrade {
-  padding: 2.5rem;
-  background-color: rgb(80, 80, 80);
-}
-
 #play {
-  padding: 3rem;
   background-color: rgb(114, 114, 114);
 }
 
