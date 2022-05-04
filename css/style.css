@@ -5,8 +5,9 @@
   --secondary-col: white;
   --secondary-col-light: white;
   /* Commons */
-  --col-black: #111;
+  --col-black: rgb(0, 0, 0);
   --col-white: #fff;
+  --col-gray: rgb(149, 149, 149);
   --dark-gray: rgb(38, 38, 38);
 }
 
@@ -19,7 +20,8 @@
 
 /* Others */
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 img {
@@ -72,17 +74,47 @@ svg {
   align-items: center;
 }
 
+/* BACKGROUND */
+.bg-gray {
+  background-color: var(--col-gray);
+}
+
 /* TEXT */
 .text-center {
   text-align: center;
+}
+
+.text-bold {
+  font-weight: 600;
 }
 
 .text-white {
   color: var(--col-white);
 }
 
-.text-gray {
+.text-black {
+  color: var(--col-black);
+}
+
+.text-lightgray {
   color: lightgray;
+}
+
+.text-gray {
+  color: var(--col-gray);
+}
+
+/* MARGIN */
+.mar-bot-smaller {
+  margin-bottom: 0.5rem;
+}
+
+.mar-bot-small {
+  margin-bottom: 1rem;
+}
+
+.mar-bot-med {
+  margin-bottom: 1.5rem;
 }
 
 /* BORDERS */
@@ -96,19 +128,33 @@ svg {
 
 /* IMAGES */
 .mini-logo-container {
+  width: 10%;
+  margin-right: 0.5rem;
+}
+
+.smaller-logo-container {
   width: 15%;
   padding: 3px 0;
   margin-right: 0.5em;
 }
 
-.mini-logo-img {
+.small-logo-container {
+  width: 20%;
+  padding: 4px 6px;
+  border: none;
+  margin-right: 0.5em;
+  background-color: var(--col-gray);
+}
+
+.logo-img {
   vertical-align: middle;
+  overflow: hidden;
 }
 
 /* OTHERS */
-.sidebar-menu-text {
-  vertical-align: middle;
-  color: white;
+.hr {
+  margin: 0.5rem 0;
+  border-bottom: 1px solid var(--col-gray);
 }
 
 
@@ -135,6 +181,7 @@ svg {
 #logo-spotify-container {
   height: 4rem;
   padding-right: 4rem;
+  margin-bottom: 0.2em;
 }
 
 #logo-spotify-img {
@@ -142,16 +189,61 @@ svg {
 }
 
 #sidebar-menu {
-  margin-top: 0.2em;
+  margin-bottom: 1.5rem;
 }
 
 #sidebar-menu a {
   padding: 0.2em 0;
+}
+
+#sidebar a {
   text-decoration: none;
 }
 
-#sidebar-menu a:hover {
+#sidebar a:hover {
   background-color: rgba(75, 75, 75, 0.2);
+  color: white;
+}
+
+#playlist-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#playlist a:hover .small-logo-container,
+#playlist a:hover svg {
+  background-color: var(--col-white);
+}
+
+#playlist-list li {
+  margin-bottom: 1.5rem;
+}
+
+#install a:hover {
+  background-color: rgba(75, 75, 75, 0);
+  color: white;
+}
+
+#install a:hover .mini-logo-container {
+  background-color: rgba(75, 75, 75, 0);
+  color: white;
+}
+
+#user a:hover {
+  background-color: rgba(75, 75, 75, 0);
+  color: white;
+}
+
+#user-logo-container {
+  width: 15%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--col-gray);
+}
+
+.sidebar-menu-text {
+  vertical-align: middle;
 }
 
 /* 
@@ -190,9 +282,6 @@ svg {
 /*******************************************************
   DEBUG ----- DEBUG ----- DEBUG -----
 *******************************************************/
-div {
-  border: 1px dashed red;
-}
 
 #play {
   background-color: rgb(114, 114, 114);
