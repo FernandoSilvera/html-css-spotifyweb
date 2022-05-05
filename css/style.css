@@ -50,6 +50,10 @@ svg {
   display: block;
 }
 
+.d-none {
+  display: none;
+}
+
 .flex-row {
   display: flex;
 }
@@ -452,7 +456,7 @@ div .margin-no {
 }
 
 @media screen and (max-width: 600px) {
-  .d-none {
+  .d-none-resp {
     display: none;
   }
 
@@ -479,6 +483,10 @@ div .margin-no {
 
   .d-block-resp {
     display: block;
+  }
+
+  .d-inline-resp {
+    display: inline-block;
   }
 }
 
