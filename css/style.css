@@ -62,6 +62,10 @@ svg {
   flex-grow: 1;
 }
 
+.flex-shrink-no {
+  flex-shrink: 0;
+}
+
 .just-between {
   justify-content: space-between;
 }
@@ -118,6 +122,10 @@ svg {
 }
 
 /* BORDERS */
+.bor-pad-small {
+  padding: 0.5rem 0.5rem 1rem;
+}
+
 .bor-pad {
   padding: 1rem;
 }
@@ -144,6 +152,10 @@ svg {
   border: none;
   margin-right: 0.5em;
   background-color: var(--col-gray);
+}
+
+.small-album-container {
+  height: 80%;
 }
 
 .logo-img {
@@ -265,11 +277,24 @@ svg {
 }
 
 /* 
-  MUSIC SECTION
+  MUSIC
 */
 #music {
   overflow: auto;
   background-color: var(--dark-gray);
+}
+
+/* 
+  PLAY
+*/
+#play {
+  height: 5rem;
+  background-color: rgb(32, 32, 32);
+}
+
+#nowplaying {
+  width: 300px;
+  height: 100%;
 }
 
 
@@ -283,10 +308,3 @@ svg {
   DEBUG ----- DEBUG ----- DEBUG -----
 *******************************************************/
 
-#play {
-  background-color: rgb(114, 114, 114);
-}
-
-#play div {
-  padding: 1rem;
-}
