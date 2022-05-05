@@ -121,44 +121,6 @@ svg {
   padding-bottom: 1rem;
 }
 
-/* MARGIN */
-div .margin-no {
-  margin: 0;
-}
-
-.mar-x-small {
-  margin: 0 1rem;
-}
-
-.mar-right-smaller {
-  margin-right: 0.5rem;
-}
-
-.mar-bot-smaller {
-  margin-bottom: 0.5rem;
-}
-
-.mar-bot-small {
-  margin-bottom: 1rem;
-}
-
-.mar-bot-med {
-  margin-bottom: 1.5rem;
-}
-
-/* BORDERS */
-.bor-pad-small {
-  padding: 1rem 0.5rem 1rem;
-}
-
-.bor-pad {
-  padding: 1rem;
-}
-
-.bor-circle {
-  border-radius: 50%;
-}
-
 /* IMAGES */
 .mini-logo-container {
   width: 20px;
@@ -203,9 +165,50 @@ div .margin-no {
 
 .time {
   
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 
+/* MARGIN */
+div .margin-no {
+  margin: 0;
+}
+
+.mar-x-small {
+  margin: 0 1rem;
+}
+
+.mar-right-smaller {
+  margin-right: 0.5rem;
+}
+
+.mar-right-small {
+  margin-right: 1rem;
+}
+
+.mar-bot-smaller {
+  margin-bottom: 0.5rem;
+}
+
+.mar-bot-small {
+  margin-bottom: 1rem;
+}
+
+.mar-bot-med {
+  margin-bottom: 1.5rem;
+}
+
+/* BORDERS */
+.bor-pad-small {
+  padding: 1rem 0.5rem 1rem;
+}
+
+.bor-pad {
+  padding: 1rem;
+}
+
+.bor-circle {
+  border-radius: 50%;
+}
 
 /****************************************************
   SECTIONS ----- SECTIONS ----- SECTIONS -----
@@ -358,6 +361,10 @@ div .margin-no {
 #time-bar {
   border-bottom: 5px solid rgb(62, 62, 62);
   border-radius: 10px;
+}
+
+#foot-right-bar {
+  width: 250px;
 }
 
 
