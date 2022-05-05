@@ -27,11 +27,13 @@ body {
 img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 svg {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 /**********************************************************
@@ -42,7 +44,6 @@ svg {
 .container {
   max-width: 100%;
   height: 100vh;
-  margin: 0 auto;
 }
 
 .d-block {
@@ -85,6 +86,10 @@ svg {
 
 .gap-15 {
   gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 .overflow-auto {
@@ -132,13 +137,13 @@ svg {
 }
 
 .smaller-logo-container {
-  width: 15%;
+  width: 35px;
   padding: 3px 0;
   margin-right: 0.5em;
 }
 
 .small-logo-container {
-  width: 20%;
+  width: 45px;
   padding: 4px 6px;
   border: none;
   margin-right: 0.5em;
@@ -165,11 +170,6 @@ svg {
 .hr {
   margin: 0.5rem 0;
   border-bottom: 1px solid var(--col-gray);
-}
-
-.time {
-  
-  margin: 0 1.5rem;
 }
 
 .album {
@@ -326,7 +326,7 @@ div .margin-no {
 }
 
 #user-logo-container {
-  width: 15%;
+  width: 28px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: var(--col-gray);
@@ -421,6 +421,13 @@ div .margin-no {
 #time-bar {
   border-bottom: 5px solid rgb(62, 62, 62);
   border-radius: 10px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+#volume-bar {
+  border-bottom: 5px solid rgb(62, 62, 62);
+  border-radius: 10px;
 }
 
 #foot-right-bar {
@@ -445,7 +452,34 @@ div .margin-no {
 }
 
 @media screen and (max-width: 600px) {
-  
+  .d-none {
+    display: none;
+  }
+
+  .width-none {
+    max-width: 50px;
+  }
+
+  .bor-pad-mini {
+    padding: 1rem 0.5rem;
+    align-items: center;
+  }
+
+  .just-center-resp {
+    justify-content: center;
+  }
+
+  .mar-no {
+    margin: 0;
+  }
+
+  .mar-resp {
+    margin: 0.25rem 0;
+  }
+
+  .d-block-resp {
+    display: block;
+  }
 }
 
 
