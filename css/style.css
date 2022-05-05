@@ -396,7 +396,8 @@ div .margin-no {
 }
 
 #nowplaying {
-  width: 250px;
+  flex-basis: 100%;
+  max-width: 250px;
   height: 100%;
 }
 
@@ -435,7 +436,8 @@ div .margin-no {
 }
 
 #foot-right-bar {
-  width: 250px;
+  flex-basis: 100%;
+  max-width: 250px;
 }
 
 
@@ -487,6 +489,10 @@ div .margin-no {
 
   .d-inline-resp {
     display: inline-block;
+  }
+
+  .flex-shrink {
+    flex-shrink: 1;
   }
 }
 
