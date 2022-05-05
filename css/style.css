@@ -58,6 +58,10 @@ svg {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -76,6 +80,10 @@ svg {
 
 .align-center {
   align-items: center;
+}
+
+.gap-15 {
+  gap: 15px;
 }
 
 /* BACKGROUND */
@@ -168,6 +176,10 @@ svg {
   margin: 0 1.5rem;
 }
 
+.album {
+  width: calc((100% / 6) - 15px);
+}
+
 /* MARGIN */
 div .margin-no {
   margin: 0;
@@ -204,6 +216,11 @@ div .margin-no {
 
 .bor-pad {
   padding: 1rem;
+}
+
+.bor-pad-x {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .bor-circle {
@@ -314,6 +331,27 @@ div .margin-no {
   border-radius: 25px;
   background-color: rgba(30, 32, 37, 0);
   text-transform: uppercase;
+}
+
+/* 
+  ALBUMS
+*/
+#filters {
+  flex-wrap: wrap;
+}
+
+#filters a {
+  display: block;
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--col-gray);
+}
+
+#filters a:hover {
+  background-color: rgba(75, 75, 75, 0);
+  color: white;
 }
 
 /* 
