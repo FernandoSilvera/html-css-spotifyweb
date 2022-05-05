@@ -64,6 +64,7 @@ svg {
 
 .flex-grow {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .flex-shrink-no {
@@ -84,6 +85,10 @@ svg {
 
 .gap-15 {
   gap: 15px;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 /* BACKGROUND */
@@ -118,15 +123,6 @@ svg {
 
 .text-gray {
   color: var(--col-gray);
-}
-
-/* PADDING */
-.pad-y-small {
-  padding: 1rem 0;
-}
-
-.pad-bot-small {
-  padding-bottom: 1rem;
 }
 
 /* IMAGES */
@@ -180,6 +176,10 @@ svg {
   width: calc((100% / 6) - 15px);
 }
 
+.thumbnail {
+  overflow: hidden;
+}
+
 /* MARGIN */
 div .margin-no {
   margin: 0;
@@ -209,6 +209,10 @@ div .margin-no {
   margin-bottom: 1.5rem;
 }
 
+.mar-bot-large {
+  margin-bottom: 2rem;
+}
+
 /* BORDERS */
 .bor-pad-small {
   padding: 1rem 0.5rem 1rem;
@@ -225,6 +229,23 @@ div .margin-no {
 
 .bor-circle {
   border-radius: 50%;
+}
+
+/* PADDING */
+.pad-small {
+  padding: 0.5rem;
+}
+
+.pad-med {
+  padding: 1rem;
+}
+
+.pad-y-small {
+  padding: 1rem 0;
+}
+
+.pad-bot-small {
+  padding-bottom: 1rem;
 }
 
 /****************************************************
@@ -318,6 +339,11 @@ div .margin-no {
 /* 
   HEADER
 */
+#content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
 #upgrade-bar {
   height: 5rem;
   justify-content: end;
@@ -336,6 +362,10 @@ div .margin-no {
 /* 
   ALBUMS
 */
+#music {
+  background-color: var(--dark-gray);
+}
+
 #filters {
   flex-wrap: wrap;
 }
@@ -352,14 +382,6 @@ div .margin-no {
 #filters a:hover {
   background-color: rgba(75, 75, 75, 0);
   color: white;
-}
-
-/* 
-  MUSIC
-*/
-#music {
-  overflow: auto;
-  background-color: var(--dark-gray);
 }
 
 /* 
